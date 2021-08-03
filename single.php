@@ -110,12 +110,7 @@ endif; ?>
                     <div class="wrap">
                      <?php
                         if ( is_user_logged_in() ):
-<<<<<<< HEAD
     echo 'Welcome, registered user!'. the_user();
-=======
-                            $user1= new WP_User();
-    echo 'Welcome, registered user!'. $user1 ->last_name;
->>>>>>> origin/edare-3-aug
 else:
     echo 'Welcome, visitor!';
 endif; ?>
@@ -168,11 +163,7 @@ endif; ?>
                                     <ul class="info_post">
                                         <li><a href="#"><span class="icon-calendar"></span>تاریخ : <?php the_time('y/m/d'); ?></a></li>
                                         <li><a href="#"><span class="icon-user"></span>نویسنده : <?php the_Author(); ?></a></li>
-<<<<<<< HEAD
                                         <li><a href="#"><span class="icon-tags"></span>عکاسی، دیزاین<?php echo getPostViews($postID); ?></a></li>
-=======
-                                        <li><a href="#"><span class="icon-tags"></span>عکاسی، دیزاین<?php echo getPostViews($post->ID); ?></a></li>
->>>>>>> origin/edare-3-aug
                                         <li><a href="#"><span class="icon-comment"></span>نظرات : <?php comments_popup_link();  $postID; ?></a></li>
                                     </ul>
                                 </div><?php endwhile;
