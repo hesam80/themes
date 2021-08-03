@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* ============================== */
+
+
+
+
+
+/* ============================== */
+#main_container .saraboxx {
+	
+	width: 400px;
+	height: 200px;
+	color: #FF9F00;
+    border: 1px solid #d9d9d9;
+    background: url(img/bg.gif) repeat scroll center top #333;
+}
+#navmenu ul {margin: 0; padding: 0; 
+	list-style-type: none; list-style-image: none; }
+#navmenu li {display: inline;
+         line-height: 45px;
+ }
+#navmenu ul li a {text-decoration:none;  margin: 4px;
+	padding: 5px 20px 5px 20px; color: blue;
+	background:#e67e22;}
+#navmenu ul li a:hover {color: purple;background: yellow;}
+
+.content-footer{
+	width: 400px;
+	height: 200px;
+	color: #FF9F00;
+    border: 1px solid #d9d9d9;
+    background: url(img/bg.gif) repeat scroll center top #333;
+    direction: ltr;
+}
+
+.entry-title a {
+	font-size: 35px;
+	
+    color: #74848c;
+}
+
