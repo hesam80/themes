@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php  if ( get_post_format() ):
-    echo get_post_format();
+    #echo get_post_format();
    #get_template_part( 'template-parts/post/content', get_post_format() );
 
 endif; ?>
@@ -109,8 +109,10 @@ endif; ?>
                 <div class="span12">
                     <div class="wrap">
                      <?php
-                        if ( is_user_logged_in() ):$user1= new WP_User();
-    echo 'Welcome, registered user!'. $user1 ->last_name;
+                        if ( is_user_logged_in() ):$user_now= wp_get_current_user();
+    echo 'Welcome, registered user!'; printf($user_now->id); echo $user_now->user_login ;
+   # echo the_Author();
+    #echo $credentials['user_login'];
 else:
     echo 'Welcome, visitor!';
 endif; ?>
