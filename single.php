@@ -109,8 +109,8 @@ endif; ?>
                 <div class="span12">
                     <div class="wrap">
                      <?php
-                        if ( is_user_logged_in() ):
-    echo 'Welcome, registered user!'. the_user();
+                        if ( is_user_logged_in() ):$user1= new WP_User();
+    echo 'Welcome, registered user!'. $user1 ->last_name;
 else:
     echo 'Welcome, visitor!';
 endif; ?>
