@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 
-<!-- Mirrored from head tag header-soraya.php -->
+<!-- Mirrored from head tag header-soraya.php header-soraya.php header-soraya.php -->
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
