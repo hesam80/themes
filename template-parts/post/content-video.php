@@ -11,7 +11,8 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 
-<!-- Mirrored from  header-sor.php  -->
+<!-- this page is content-video.php  --><!-- this page is content-video.php  -->
+<!-- this page is content-video.php  -->
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
