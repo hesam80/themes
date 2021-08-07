@@ -72,7 +72,15 @@ endif; ?>
                                 	<div class="contact_button btn-sample btn-large">
                                     	<a href="<?php bloginfo('url'); ?>/wp-login.php"><span class="icon-white icon-info"></span>تماس با من</a>
                                 	</div>
-                                     <?php print("<p>شما در این صفحه هستید</p>"."<p>". $_SERVER['SCRIPT_NAME']."</p>");  ?>
+                    <?php  print("<p>شما در این صفحه هستید</p>"."<p>". $_SERVER['SCRIPT_NAME']."</p>"); 
+                          if ( is_user_logged_in() ):$user_now= wp_get_current_user();
+                                echo 'Welcome, registered user ! '  .$user_now->user_login ;
+                                # echo the_Author();
+                                #echo $credentials['user_login'];
+                         else:
+                               echo "!&nbsp"; echo 'Welcome , visitor'; 
+                        endif; 
+                    ?>
                         </div>
                         <!-------------content menu---------------------------->
                         <nav class="navbar span3">
