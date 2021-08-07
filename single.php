@@ -163,9 +163,9 @@ endif; ?>
                                     </p>
                                     <!--<a class="btn-sample" href="<?php the_permalink(); ?>">ادامه مطلب &rsaquo;</a> -->
                                     <ul class="info_post">
-                                        <li><a href="#"><span class="icon-calendar"></span>تاریخ : <?php the_time('y/m/d'); ?></a></li>
+                                        <li><a href="#"><span class="icon-calendar"></span>تاریخ : <?php the_time(' Y , jS , F '); ?></a></li>
                                         <li><a href="#"><span class="icon-user"></span>نویسنده : <?php the_Author(); ?></a></li>
-                                        <li><a href="#"><span class="icon-tags"></span>عکاسی، دیزاین<?php echo getPostViews($postID); ?></a></li>
+                                        <li><a href="#"><span class="icon-tags"></span>مقاله: <?php echo the_ID(); ?></a></li>
                                         <li><a href="#"><span class="icon-comment"></span>نظرات : <?php comments_popup_link();  $postID; ?></a></li>
                                     </ul>
                                 </div><?php endwhile;
