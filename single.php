@@ -104,22 +104,12 @@ endif; ?>
     
     <!--Begin content main-->
     <section id="content" class="blog">
-        <div class="container-fluid">
-            <div class="row-fluid">
-                <div class="span12">
-                    <div class="wrap">
-                     <?php
-                        if ( is_user_logged_in() ):$user_now= wp_get_current_user();
-    echo 'Welcome, registered user!'; printf($user_now->id); echo $user_now->user_login ;
-   # echo the_Author();
-    #echo $credentials['user_login'];
-else:
-    echo 'Welcome, visitor!';
-endif; ?>
-                        <div class="content_main row-fluid span12">
-                           
-
- <div class="content_center alignright ">
+      <div class="container-fluid">
+         <div class="row-fluid">
+            <div class="span12">
+                <div class="wrap">
+                    <div class="content_main row-fluid span12">
+                         <div class="content_center alignright ">
                                 <?php if(! have_posts()) :  ?>
                                      <p>
                                         <?php print(get_post_type()); ?>
