@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<?php  if ( get_post_format() ):
+<?php  if ( $post->ID =='299'):
+ #get_template_part('template-parts/post/content', 'cat2');
     #echo get_post_format();
-   #get_template_part( 'template-parts/post/content', get_post_format() );
-
-endif; ?>
+   get_template_part( 'template-parts/post/content', get_post_format() );
+else :
+    ?>
 <html <?php language_attributes(); ?> class="no-js">
 
 <!-- this page single.php  single.php single.php-->
@@ -95,7 +96,7 @@ endif; ?>
                                  <li class="menu_item"><a alt="<?php the_title(); ?>" target="_blank" href="<?php bloginfo('url');?>/?cat=2">مستندات </a></li>
                                 <li class="menu_item"><a alt="<?php the_title(); ?>" target="_blank" href="<?php bloginfo('url');?>/?cat=11">کامپیوتر </a></li>
                                <li class="menu_item"><a alt="<?php the_title(); ?>" target="_blank" href="<?php bloginfo('url');?>/?cat=4">هواپیمایی</a></li>
-                                <li class="menu_item"><a  alt="<?php the_title(); ?>" target="_blank" href="<?php bloginfo('url'); ?>/?m=2016">بلاگ </a></li>
+                                <li class="menu_item"><a  alt="<?php the_title(); ?>" target="_blank" href="<?php bloginfo('url'); ?>/?m=2016">ببلاگر</a></li>
                                 <li class="menu_item"><a alt="<?php the_title(); ?>" target="_blank" href="<?php bloginfo('url'); ?>/?cat=3">تماس با من </a></li>
                             </ul>
                             </div>
@@ -204,7 +205,7 @@ endif; ?>
         </div>
     </section>
     <!--End begin content main-->
-
+  <?php get_sidebar(); ?>
     <!--Begin footer-->
     <footer>
         <div class="container-fluid">
@@ -268,3 +269,4 @@ endif; ?>
 
 </body>
 </html>
+<?php endif; ?>
